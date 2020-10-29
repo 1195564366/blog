@@ -1,10 +1,10 @@
 <template>
-  <div class="cos-setting-wrap">
+  <div class="setting-wrap">
     <el-form
       ref="form"
       label-position="left"
       label-width="100px"
-      class="cos-setting-form"
+      class="setting-form"
       v-loading="loading"
       :model="form"
       :rules="rules"
@@ -19,7 +19,7 @@
         <el-input placeholder="输入Bucket" v-model="form.Bucket" />
       </el-form-item>
       <el-form-item label="Region" prop="Region">
-        <el-input placeholder="Region" v-model="form.Region" />
+        <el-input placeholder="输入Region" v-model="form.Region" />
       </el-form-item>
       <el-button size="medium" type="primary" style="width: 100%" @click="submit">更新设置</el-button>
     </el-form>
@@ -104,14 +104,3 @@ export default {
   },
 };
 </script>
-
-<style lang="less">
-.cos-setting {
-  &-wrap {
-  }
-  &-form {
-    width: 500px;
-    margin: 0 auto;
-  }
-}
-</style>

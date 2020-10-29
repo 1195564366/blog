@@ -1,10 +1,10 @@
 <template>
-  <div class="blog-setting-wrap">
+  <div class="setting-wrap">
     <el-form
       ref="form"
       label-position="left"
       label-width="100px"
-      class="blog-setting-form"
+      class="setting-form"
       v-loading="loading"
       :model="form"
       :rules="rules"
@@ -93,14 +93,3 @@ export default {
   },
 };
 </script>
-
-<style lang="less">
-.blog-setting {
-  &-wrap {
-  }
-  &-form {
-    width: 500px;
-    margin: 0 auto;
-  }
-}
-</style>

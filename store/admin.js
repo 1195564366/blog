@@ -8,7 +8,6 @@ export const mutations = {
     state.isCollapse = !state.isCollapse
   },
   setToken(state, token) {
-    console.log(state, token)
     state.token = token
   }
 }

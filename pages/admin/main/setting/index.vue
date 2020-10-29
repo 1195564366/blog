@@ -7,7 +7,9 @@
       <el-tab-pane label="云存储(cos)设置">
         <CosSetting />
       </el-tab-pane>
-      <el-tab-pane label="账号设置">账号设置</el-tab-pane>
+      <el-tab-pane label="账号设置">
+        <AccountSetting />
+      </el-tab-pane>
     </el-tabs>
   </div>
 </template>
@@ -15,6 +17,7 @@
 <script>
 import BlogSetting from "./component/blogSetting";
 import CosSetting from "./component/cosSetting";
+import AccountSetting from "./component/accountSetting";
 export default {
   layout: "admin",
   head() {
@@ -25,9 +28,18 @@ export default {
   components: {
     BlogSetting,
     CosSetting,
+    AccountSetting,
   },
 };
 </script>
 
-<style>
+<style lang="less">
+.setting {
+  &-wrap {
+  }
+  &-form {
+    width: 500px;
+    margin: 0 auto;
+  }
+}
 </style>

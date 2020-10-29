@@ -52,8 +52,8 @@ export default {
           icon: "list",
         },
         {
-          name: "静态化部署",
-          link: "/admin/main/staticBuild",
+          name: "部署管理",
+          link: "/admin/main/deploy",
           icon: "build",
         },
         {
