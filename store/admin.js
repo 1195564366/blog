@@ -1,3 +1,5 @@
+import { Cache } from '@utils';
+
 export const state = () => ({
   isCollapse: true,
   token: null

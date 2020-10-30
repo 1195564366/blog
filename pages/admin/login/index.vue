@@ -41,7 +41,8 @@ export default {
       ],
     };
   },
-  created() {
+
+  beforeCreate() {
     if (this.$store.state.admin.token) {
       this.$router.push("/admin/main/home");
     }
